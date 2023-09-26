@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!--------------------------------------------- 
+    *    Auteur : BELLO Noah
+    *    Date du projet : 16/03/2023 - 25/03/2023
+    *    Nom du fichier : calculatrice.html
+    ---------------------------------------------->
+
+    <head>
+
+        <!-- Informations Générales de la page -->
+
+        <meta charset="UTF-8"> <!-- Type de codage de caractères -->
+        <title>Projet Calculatrice</title> <!-- Titre de la page -->
+        <link rel="stylesheet" href="./calculatrice.css"> <!-- Lien avec le fichier CSS pour le style de la page -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script> <!-- Lien avec le script jquery pour ensuite pour voir utiliser ajax -->
+
+    </head>
+
+    <body>
+
+        <!-- Corps de la page -->
+
+        <h1>Projet Calculatrice en HTML, CSS, Javascript, PHP et SQL</h1> <!-- Titre h1 pour présenter la page -->
+
+        <!-- Premier div pour mettre la calculatrice et l'historique en face l'un de l'autre -->
+        <div id="flex">
+
+            <!-- Deuxième div pour contenir juste la calculatrice -->
+            <div id="calculatrice">
+
+                <h2>Calculatrice</h2> <!-- Titre h2 pour présenter la partie -->
+
+                <!-- Utilisation d'un form pour récupérer les informations de type : calcul, boutons, touche du clavier ... -->
+                <form id="envoie_pour_php">
+
+                    <input type="text" disabled id="affiche_calcul_resultat" placeholder="0"> <!-- input pour voir le calcul et le résultat -->
+
+                    <!-- div pour mettre en place les boutons de la calculatrice -->
+                    <div class="dimension">
+
+                        <!-- input pour créer les boutons de la calculatrice -->
+                        <input id="resert" type="button" class="button" value="C">
+                        <input type="button" id="parenthese_gauche" class="button" value="(">
+                        <input type="button" id="parenthese_droite" class="button" value=")">
+                        <input id="diviser" class="operation espace_operation button" type="button" value="/">
+
+                    </div>
+
+                    <!-- div pour mettre en place les boutons de la calculatrice -->
+                    <div class="dimension">
+
+                        <!-- input pour créer les boutons de la calculatrice -->
+                        <input type="button" class="button espace" value="7">
+                        <input type="button" class="button espace" value="8">
+                        <input type="button" class="button" value="9">
+                        <input type="button" id="multiplication" class="button espace_operation operation" value="x">
+
+                    </div>
+
+                    <!-- div pour mettre en place les boutons de la calculatrice -->
+                    <div class="dimension">
+
+                        <!-- input pour créer les boutons de la calculatrice -->
+                        <input type="button" class="button espace" value="4">
+                        <input type="button" class="button espace" value="5">
+                        <input type="button" class="button" value="6">
+                        <input type="button" id="moins" class="button espace_operation operation" value="-">
+
+                    </div>
+
+                    <!-- div pour mettre en place les boutons de la calculatrice -->
+                    <div class="dimension">
+
+                        <!-- input pour créer les boutons de la calculatrice -->
+                        <input type="button" class="button espace" value="1">
+                        <input type="button" class="button espace" value="2">
+                        <input type="button" class="button" value="3">
+                        <input type="button" class="button espace_operation operation" value="+">
+
+                    </div>
+
+                    <!-- div pour mettre en place les boutons de la calculatrice -->
+                    <div class="dimension">
+
+                        <!-- input pour créer les boutons de la calculatrice -->
+                        <input id="zero" type="button" class="button" value="0">
+                        <input id="negatif" type="button" class="button" value="(-)">
+                        <input id="virgule" type="button" class="button" value=".">
+                        <input type="submit" id="egal" class="button operation" value="=">
+
+                    </div>
+
+                </form>
+
+                <!-- div pour voir un petit historique en dessous de la calculatrice (vide) -->
+                <div id="petit_historique"></div>
+
+            </div>
+
+            <!-- Troisième div pour contenir juste la calculatrice -->
+            <div id="affichage_global_historique">
+
+                <h2>Historique</h2> <!-- Titre h2 pour présenter la partie -->
+
+                <!-- Utilisation d'un form pour récupérer les informations de type : boutons -->
+                <form id="envoie_pour_php2">
+
+                    <!-- input pour créer les boutons pour voir l'historique et l'effacer -->
+                    <input type="submit" id="button_historique" class="button_historique" value="Voir l'historique complet">
+                    <input type="submit" id="button_efface_historique" class="button_historique" value="Effacer l'historique complet">
+                    <input type="submit" id="button_efface_petit_historique" class="button_historique" value="Effacer historique sous calculatrice">
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <script src="./calculatrice.js"></script> <!-- Lien avec le fichier JS (Javascript) pour le script de la page -->
+
+    </body>
+
+</html>

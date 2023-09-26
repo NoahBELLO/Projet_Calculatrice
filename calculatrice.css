@@ -1,0 +1,252 @@
+/************************************************
+*    Auteur : BELLO Noah
+*    Date du projet : 16/03/2023 - 25/03/2023
+*    Nom du fichier : calculatrice.css
+************************************************/
+
+/* Style qui permet de mettre toute les tailles de polices à un nombre donné */
+* {
+
+    font-size: 35px; /* Taille de la police */
+
+}
+
+/* Style pour décorer le corps de la page avec un image */
+body {
+
+    background-image: url(./background.gif); /* Lien avec l'image */
+    background-repeat: no-repeat; /* Pour éviter que l'image ne se répete */
+    background-size: cover; /* Pour que l'image prenne toute la page */
+    background-attachment: fixed; /* Pour que l'image ne bouge pas lors de zoom */
+
+}
+
+/* Style pour décorer le corps de la calculatrice */
+#envoie_pour_php {
+
+    background-color: red; /* Couleur de la calculatrice */
+    border-radius: 25px; /* Permet d'arrondir les angles de la calculatrice */
+    width: 300px; /* Permet de définir la largeur de la calculatrice */
+    padding: 20px 0px 15px 15px; /* Permet de mettre des marges internes pour que le corps de la calculatrice ne colle pas les boutons ou le champs */
+
+}
+
+/* Style pour décorer le champs de saisie et de résultat */
+#affiche_calcul_resultat {
+
+    font-size: 25px; /* Taille de la police */
+    text-align: right; /* Permet de placer le texte du côté droit */
+    border: 2px solid black; /* Permet de mettre la bordure avec un certain style */
+    border-radius: 5px; /* Permet d'arrondir les angles du champ */
+    color: black; /* Permet de mettre un couleur sur le texte */
+    background-color: white; /* Permet de mettre une couleur de fond au champ */
+    margin-bottom: 20px; /* Permet d'espacer le champ et les premiers boutons */
+    padding: 20px; /* Permet d'avoir un espace intérieur dans le champ */
+    width: 80%; /* Permet de définir la largeur du champ */
+
+}
+
+/* Style pour mettre de l'espace pour certains bouttons */
+.espace {
+
+    margin-right: 15px; /* Permet de mettre une marge externe pour espacer les boutons */
+
+}
+
+/* Style pour mettre de l'espace pour certains bouttons */
+.espace_operation {
+
+    margin-left: 15px; /* Permet de mettre une marge externe pour espacer les boutons */
+
+}
+
+/* Style pour décorer les boutons */
+.button {
+
+    border: 2px solid black ; /* Permet de mettre la bordure avec un certain style */
+    border-radius: 100%; /* Permet d'arrondir les angles les bouttons */
+    margin-bottom: 5px; /* Permet de mettre une marge externe pour espacer les boutons */
+    padding: 5px 15px 5px 15px; /* Permet d'avoir un espace intérieur dans les bouttons */
+
+}
+
+/* Style pour décorer les boutons */
+#parenthese_gauche {
+
+    padding: 5px 20px 5px 20px; /* Permet d'avoir un espace intérieur dans les bouttons */
+    margin-left: 10px; /* Permet de mettre une marge externe pour espacer les boutons */
+
+}
+
+/* Style pour décorer les boutons */
+#parenthese_droite {
+
+    padding: 5px 20px 5px 20px; /* Permet d'avoir un espace intérieur dans les bouttons */
+    margin-left: 12px; /* Permet de mettre une marge externe pour espacer les boutons */
+
+}
+
+/* Style pour décorer les boutons */
+#diviser {
+
+    padding: 5px 20px 5px 20px; /* Permet d'avoir un espace intérieur dans les bouttons */
+    margin-left: 13px; /* Permet de mettre une marge externe pour espacer les boutons */
+
+}
+
+/* Style pour décorer les boutons */
+#moins {
+
+    padding: 5px 20px 5px 20px; /* Permet d'avoir un espace intérieur dans les bouttons */
+    margin-left: 15px; /* Permet de mettre une marge externe pour espacer les boutons */
+
+}
+
+/* Style pour décorer les boutons */
+#multiplication {
+
+    padding: 5px 17px 5px 15px; /* Permet d'avoir un espace intérieur dans les bouttons */
+    margin-left: 15px; /* Permet de mettre une marge externe pour espacer les boutons */
+
+}
+
+/* Style pour décorer les boutons */
+#negatif {
+
+    padding: 5px 10px 5px 6px; /* Permet d'avoir un espace intérieur dans les bouttons */
+    margin: 0px 15px 0px 15px; /* Permet de mettre une marge externe pour espacer les boutons */
+
+}
+
+/* Style pour décorer les boutons */
+#virgule {
+
+    padding: 5px 20px 5px 20px; /* Permet d'avoir un espace intérieur dans les bouttons */
+    margin-right: 13px; /* Permet de mettre une marge externe pour espacer les boutons */
+
+}
+
+/* Style pour décorer les boutons */
+.operation {
+
+    background-color: yellow; /* Permet de mettre une couleur de fond aux bouttons */
+
+}
+
+/* Style pour décorer un titre de type h1 */
+h1 {
+
+    display: flex; /* Permet de pouvoir manipuler le titre */
+    justify-content: center; /* Permet de centrer le titre */
+    color: green; /* Permet de mettre un couleur sur le titre */
+    text-decoration-line: underline; /* Permet de décorer le texte avec un souligner */
+    font-style: italic; /* Permet de mettre le titre en italique */
+
+}
+
+/* Style pour décorer un titre de type h2 */
+h2 {
+
+    display: flex; /* Permet de pouvoir manipuler le titre */
+    justify-content: center; /* Permet de centrer le titre */
+    font-size: 30px; /* Taille de la police */
+    text-decoration-line: underline; /* Permet de décorer le texte avec un souligner */
+
+}
+
+/* Style pour mettre des dimensions */
+.dimension {
+
+    width: 300px; /* Permet de définir la largeur de la ligne de boutton */
+
+}
+
+/* Style pour décorer le champ d'historique */
+.historique {
+
+    display: flex; /* Permet de pouvoir manipuler le champ */
+    justify-content: space-evenly; /* Permet d'espacer les champs */
+    align-items: center; /* Permet d'aligner le texte */
+    border: 2px solid black; /* Permet de mettre la bordure avec un certain style */
+    background-color: aqua; /* Permet de mettre une couleur de fond l'historique */
+
+}
+
+/* Style pour décorer le texte */
+#date {
+
+    font-size: 15px; /* Taille de la police */
+
+}
+
+/* Style pour décorer le texte */
+#historique {
+
+    font-size: 20px; /* Taille de la police */
+
+}
+
+/* Style pour décorer le texte */
+#mise_en_place_calcul {
+
+    display: flex; /* Permet de pouvoir manipuler le champ */
+    justify-content: center; /* Permet de centrer le champs */
+
+}
+
+/* Style pour décorer le texte dans les inputs */
+.calcul[type="button"] {
+
+    font-size: 20px; /* Taille de la police */
+    background-color: aqua; /* Permet de mettre une couleur de fond au bouton */
+    border: none; /* Permet de retirer la bordure */
+
+}
+
+/* Style pour mettre une disposition */
+#flex {
+
+    display: flex; /* Permet de pouvoir manipuler les parties */
+    justify-content: space-around; /* Permet d'espacer la partie calculatrice et historique */
+
+}
+
+/* Style pour décorer le texte dans les inputs */
+.button_historique[type="submit"] {
+
+    font-size: 20px; /* Taille de la police */
+    border-radius: 20px; /* Permet d'arrondir les angles des bouttons */
+    background-color: goldenrod; /* Permet de mettre une couleur de fond au boutton */
+
+}
+
+/* Style pour décorer le tableau */
+table {
+
+    table-layout: auto; /* Permet de mettre une disposition au tableau */
+    width: 100%; /* Permet de définir la largueur */
+    border: 1px solid black;  /* Permet de mettre la bordure avec un certain style */
+
+}
+
+th,
+td {
+
+    font-size: 15px; /* Taille de la police */
+
+}
+
+td {
+
+    text-align: center; /* Permet de centrer le texte */
+
+}
+
+/* Style pour décorer le texte dans les inputs */
+.calcul_historique_bdd[type="button"] {
+
+    background-color: rgba(255, 255, 255, 0); /* Permet de mettre une couleur de fond au bouton */
+    border: none; /* Permet de retirer la bordure */
+    font-size: 15px; /* Taille de la police */
+
+}
